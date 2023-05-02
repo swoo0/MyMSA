@@ -30,7 +30,7 @@ spec:
         app: w2
     spec:
       containers:
-      - image: swoo0/mynginx:1.0
+      - image: swoo0/nginx:v1
         imagePullPolicy: IfNotPresent
         name: mynginx
         resources: {}
