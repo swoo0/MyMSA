@@ -1,0 +1,30 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2023-04-28T00:11:14Z"
+  labels:
+    app: w2
+  name: w2
+  namespace: default
+  resourceVersion: "208535"
+  uid: c230cc63-b84e-4221-94fb-0cd49b6b5729
+spec:
+  clusterIP: 10.233.3.242
+  clusterIPs:
+  - 10.233.3.242
+  externalTrafficPolicy: Cluster
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - nodePort: 31635
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: w2
+  sessionAffinity: None
+  type: NodePort
+status:
+  loadBalancer: {}
