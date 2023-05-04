@@ -56,6 +56,6 @@ status:
     status: "True"
     type: Progressing
   observedGeneration: 1
-  replicas: 1
+  replicas: 3
   unavailableReplicas: 1
   updatedReplicas: 1
